@@ -1,0 +1,5 @@
+lmSun = glm(data$TYS_PLN~data$TEMP_NOON,data, family = "binomial")
+summary(lmSun)
+plot(lmSun)
+abline(lmSun)
+plot(lmSun$residuals, col = "red")

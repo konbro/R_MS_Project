@@ -1,0 +1,5 @@
+lmSun = glm(data$TYS_PLN~data$TEMP_NOON+ data$SUN ,data, family = binomial("logit"), maxit = 100)
+summary(lmSun)
+plot(lmSun)
+abline(lmSun)
+plot(lmSun$residuals, col = "green")
